@@ -3,7 +3,7 @@ namespace: production
 replicaCount: 3
 
 image:
-  repository: 075120018043.dkr.ecr.us-east-1.amazonaws.com/color-app
+  repository: 147467063105.dkr.ecr.us-east-1.amazonaws.com/color-app:v1
   pullPolicy: IfNotPresent
   tag: "v2"
 
@@ -15,7 +15,7 @@ serviceAccount:
   create: true
   automount: true
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::075120018043:role/color-app-eso-role
+    eks.amazonaws.com/role-arn: arn:aws:iam::147467063105:role/color-app-eso-role
   name: "color-app"
 
 podAnnotations: {}
