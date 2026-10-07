@@ -3,7 +3,7 @@ namespace: production
 replicaCount: 3
 
 image:
-  repository: 147467063105.dkr.ecr.us-east-1.amazonaws.com/color-app:v1
+  repository: ddankwah/color-app
   pullPolicy: IfNotPresent
   tag: "v2"
 
