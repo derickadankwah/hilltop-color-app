@@ -5,7 +5,7 @@ replicaCount: 3
 image:
   repository:  147467063105.dkr.ecr.us-east-1.amazonaws.com/color-app
   pullPolicy: IfNotPresent
-  tag: "v1"
+  tag: "v2"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -45,7 +45,7 @@ autoscaling:
   targetCPUUtilizationPercentage: 60
 
 configmap:
-  APP_COLOR: "purple"
+  APP_COLOR: "green"
   APP_ENV: "production"
   APP_MESSAGE: "Hello from Color-App Production! Deployed with Helm and External Secrets Operator"
 
